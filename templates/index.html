@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyeku Abdulquadri</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <h1 class = "text-center my-4">CAT STORE</h1>
+        </div>
+    </header>
+    <main class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://careerwebsites--oyekuabdulquadr.repl.co/static/img1.jpg" alt="" class="img-fluid" style="height: 1500px;">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="text-center my-5">
+                    <div><h2>About Jovian </h2></div>
+                    <div><p class="lead">
+                        Lorem ipsum dolor sit ameqt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class>
+                    <h2>Open Positions</h2>
+                    <div>
+                      {% for job in jobs %}
+                        {% include 'job.html' %}
+                      {% endfor %}
+                    </div>
+                </div>
+                <div class='my-4'>
+                    <button type="button" class="btn btn-primary btn-lg">Contact us</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <div>
+    <footer>
+        <footer class="footer mt-auto py-3 bg-dark">
+            <div class="container">
+              <span class="text-white">&copy; copyright</span>
+            </div>
+          </footer>
+    </footer>
+</body>
+</html>

@@ -1,5 +1,15 @@
-<div>Job: {{job['title']}}</div>
-  <div>Location: {{job['location']}}</div>
-  {% if 'salary' in job %}
-    <div>Salary: {{job['salary']}}</div                       
-  {% endif %}x
+<div class="row justify-content-end my-3">
+  <div class="row border-bottom">
+  <div class="col-9">
+      <p class="h5">Job: {{job['title']}}</p>
+      <p class="h6">Location: {{job['location']}}</p>
+    {% if 'salary' in job %}      
+      <p class="h7">Salary {{job['salary']}}</p>
+    {% endif %}
+  </div>
+  <div class="col-3">
+      <button type="button" class="offset-7 btn btn-outline-primary">Apply</button>
+  </div>
+  <span class="border-end"></span>
+</div>
+</div>
